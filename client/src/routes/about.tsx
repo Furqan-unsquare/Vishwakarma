@@ -125,7 +125,7 @@ function RouteComponent() {
           <span className="text-Orange">Vishwakarma Samaja</span>
         </h1>
         <p className="text-gray-600 text-base md:text-lg leading-relaxed max-w-2xl mx-auto md:mx-0">
-          Shri Vishwakarma Panchal Samaj Association, Thane, is a community dedicated to unity, cultural heritage, and social progress. Since its establishment in 2003, we have empowered youth, women, and elders through education, employment opportunities, and the preservation of our rich traditions.
+          Shree Vishwakarma Panchal Samaj Association, Thane, is a community dedicated to unity, cultural heritage, and social progress. Since its establishment in 2003, we have empowered youth, women, and elders through education, employment opportunities, and the preservation of our rich traditions.
         </p>
       </div>
 
@@ -175,7 +175,7 @@ function Roots() {
         <p className={`tracking-wide text-gray-600 leading-relaxed text-base md:text-lg ${expanded ? '' : 'line-clamp-4 md:line-clamp-none'}`}>
           For centuries, the Vishwakarmas have been revered as architects of creativity, design, and engineering in India. Descended from the five sons of Lord Vishwakarma—Manu (blacksmiths), Maya (carpenters), Twosta (metalworkers), Silpy (sculptors), and Viswajna (goldsmiths)—our community has crafted temples, sculptures, and monuments that embody skill and devotion.
           <br /><br />
-          Historically, Vishwakarma Samaj was a guild of artisans and a spiritual community, worshipping Shri Vishwakarma and Gayatri Devi with unique rites and traditions, establishing us as cultural torchbearers of Hindu dharma.
+          Historically, Vishwakarma Samaj was a guild of artisans and a spiritual community, worshipping Shree Vishwakarma and Gayatri Devi with unique rites and traditions, establishing us as cultural torchbearers of Hindu dharma.
           <br /><br />
           Today, despite challenges like poverty and lack of education, our ancestors’ legacy drives us to foster unity, education, and heritage, reclaiming our role as cultural guardians and pioneers of progress.
         </p>

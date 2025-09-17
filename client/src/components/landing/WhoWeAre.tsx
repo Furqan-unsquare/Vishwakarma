@@ -29,7 +29,7 @@ function WhoWeAre() {
       {/* Right side: text content */}
       <div className="flex flex-col justify-between gap-4">
         <h4 className="text-lg md:text-2xl font-medium text-gray-800">
-          Shri Vishwakarma Panchal Samaj Association, Thane, is dedicated to
+          Shree Vishwakarma Panchal Samaj Association, Thane, is dedicated to
           strengthening bonds within the community and fostering an environment
           of brotherhood, cooperation, and collective growth.
         </h4>

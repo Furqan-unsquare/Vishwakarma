@@ -149,7 +149,7 @@ function FigureCard({ figure }: { figure: typeof topFigures[0] }) {
        
   src={figure.img}
   alt={figure.name}
-        className="w-full h-40 md:h-48 object-cover rounded-2xl mb-2"
+        className="w-full h-44 md:h-80  object-cover rounded-2xl mb-2"
       />
 
 

@@ -11,7 +11,7 @@ function VideoWork() {
         <p className="text-gray-300 text-base leading-relaxed md:max-w-[50ch] md:text-lg md:text-right">
           Explore the journey of Vishwakarma Samaj — from ancient craftsmanship
           to modern innovation. These stories capture our culture, unity, and
-          the legacy of Shri Vishwakarma that continues to inspire generations.
+          the legacy of Shree Vishwakarma that continues to inspire generations.
         </p>
       </div>
 

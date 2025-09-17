@@ -17,9 +17,9 @@ type ExpenseTimeline = {
 const expensesTimeline: ExpenseTimeline[] = [
   {
     date: ' 2025-09-17',
-    heading: 'Shri Vishwakarma Puja Festival',
+    heading: 'Shree Vishwakarma Puja Festival',
     image: { url: '...', srcSet: '...', sizes: '...' },
-    subtitle: 'A cultural program to celebrate Shri Vishwakarma Puja, with community prayers and Mahaprasad.',
+    subtitle: 'A cultural program to celebrate Shree Vishwakarma Puja, with community prayers and Mahaprasad.',
     link: '/events/vishwakarma-pooja-chhapra-2020',
   },
   // {

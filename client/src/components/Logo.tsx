@@ -19,7 +19,7 @@ function Logo() {
 
         {/* Main title */}
         <p className="font-Poppins text-lg lg:text-xl font-semibold leading-snug">
-          Shri Vishwakarma Panchal Samaj Association, Thane
+          Shree Vishwakarma Panchal Samaj Association, Thane
         </p>
       </div>
     </div>
