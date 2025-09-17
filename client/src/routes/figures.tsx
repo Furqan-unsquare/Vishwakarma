@@ -13,9 +13,9 @@ const topFigures = [
   { name: 'Mr. Kalpanath Bagedu Vishwakarma', role: 'Founder', img: '/3.png', desc: '' },
   { name: 'Mr. Nanhelal Mangruram Vishwakarma', role: 'Founder', img: '/4.png', desc: '' },
   { name: 'Mr. Ramlal Mangruram Vishwakarma', role: 'Founder/Vice President', img: '/5.png', desc: '' },
-  { name: 'Ramjeet Vishwakarma', role: 'President', img: '/6.png', desc: '' },
-  { name: 'Shivsagar Vishwakarma', role: 'Treasurer', img: '/7.png', desc: '' },
-  { name: 'Parshuram Vishwakarma', role: 'Executive Chairman' , img: '/8.png', desc: '' },
+  { name: 'Mr. Ramjeet Vishwakarma', role: 'President', img: '/6.png', desc: '' },
+  { name: 'Mr. Shivsagar Vishwakarma', role: 'Treasurer', img: '/7.png', desc: '' },
+  { name: 'Mr. Parshuram Vishwakarma', role: 'Executive Chairman' , img: '/8.png', desc: '' },
 ]
 
 

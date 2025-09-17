@@ -15,7 +15,7 @@ export default function Header() {
     { linkTo: '/', text: 'Home' },
     { linkTo: AboutRoute.to, text: 'About us' },
     { linkTo: WorkRoute.to, text: 'Our work' },
-    { linkTo: FiguresRoute.to, text: 'Figures' },
+    { linkTo: FiguresRoute.to, text: 'Visionaries' },
     { linkTo: DonationRoute.to, text: 'Donations' },
   ]
 

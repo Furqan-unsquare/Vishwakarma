@@ -7,7 +7,7 @@ function Logo() {
       <img
         src={VishawakarmaSamajLogo}
         alt="Vishwakarma Samaj Logo"
-        className="w-10 sm:w-14 md:w-16 lg:w-20 aspect-square object-contain"
+        className="w-20 sm:w-14 md:w-16 lg:w-20 aspect-square object-contain"
       />
 
       {/* Text section */}
