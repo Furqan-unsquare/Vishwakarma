@@ -103,14 +103,14 @@ function RouteComponent() {
   return (
     <div className="w-full min-h-screen font-Dm-Sans overflow-x-hidden">
       <div className="px-4 pt-32 pb-16 md:px-32 bg-parchment">
-        <h1 className="font-Poppins font-semibold text-4xl md:text-6xl text-center tracking-tight md:leading-[1.2] mb-16">
-          Our Visionaries
+        <h1 className="font-Poppins font-semibold text-4xl md:text-6xl text-center tracking-tight md:leading-[1.2] md:mb-16">
+          Honoring the Visionaries of Our <i>Samaj</i>
         </h1>
 
         {/* Top 8 figures as 4x2 grid */}
         <div className="mt-8 md:mt-16">
           <h2 className="text-2xl md:text-4xl font-semibold mb-6 text-center md:text-left">
-            Top Leaders
+            Visionaries
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6">
             {topFigures.map((fig, i) => (
