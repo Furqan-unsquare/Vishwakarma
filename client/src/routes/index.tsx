@@ -4,7 +4,6 @@ import Hero from '@/components/landing/Hero'
 import ProminentFigures from '@/components/landing/ProminentFigures'
 import Support from '@/components/landing/Support'
 import UpcomingEvents from '@/components/landing/UpcomingEvents'
-// import VideoWork from '@/components/landing/VideoWork'
 import WhoWeAre from '@/components/landing/WhoWeAre'
 import Work from '@/components/landing/Work'
 import { createFileRoute } from '@tanstack/react-router'
@@ -18,7 +17,6 @@ function App() {
     <main className="overflow-x-hidden">
       <Hero />
       <WhoWeAre />
-      {/* <VideoWork /> */}
       <ProminentFigures />
       <Support />
       <Work />
