@@ -1,9 +1,6 @@
 import {
-  IconBrandInstagram,
-  IconBrandTwitter,
   IconLeaf,
 } from '@tabler/icons-react'
-import { Link } from '@tanstack/react-router'
 
 
 const leaders = [

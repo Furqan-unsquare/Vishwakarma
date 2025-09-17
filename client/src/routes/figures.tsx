@@ -1,17 +1,9 @@
-import { useState } from 'react'
 import Footer from '@/components/Footer'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/figures')({
   component: RouteComponent,
 })
-
-const IMG_URL =
-  'https://img.freepik.com/premium-photo/mature-men_1048944-19507027.jpg'
-const SRCSET =
-  'https://img.freepik.com/premium-photo/mature-men_1048944-19507027.jpg?w=360 360w, https://img.freepik.com/premium-photo/mature-men_1048944-19507027.jpg?w=740 740w, https://img.freepik.com/premium-photo/mature-men_1048944-19507027.jpg?w=1060 1060w, https://img.freepik.com/premium-photo/mature-men_1048944-19507027.jpg?w=1480 1480w, https://img.freepik.com/premium-photo/mature-men_1048944-19507027.jpg?w=2000 2000w'
-const IMG_SIZES =
-  '(max-width: 480px) 100vw, (min-aspect-ratio: 417/626) 100%, (max-width: 1096px) calc(100vw - 40px), calc(100vw - 540px)'
 
 // Top 8 with images
 const topFigures = [
