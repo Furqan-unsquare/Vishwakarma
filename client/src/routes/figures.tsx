@@ -101,7 +101,7 @@ const otherMembers = [
 
 function RouteComponent() {
   return (
-    <div className="w-full min-h-screen font-Dm-Sans overflow-x-hidden">
+    <div className="w-full min-h-screen font-Dm-Sans overflow-x-hidden mt-4 md:mt-0">
       <div className="px-4 pt-32 pb-16 md:px-32 bg-parchment">
         <h1 className="font-Poppins font-semibold text-4xl md:text-6xl text-center tracking-tight md:leading-[1.2] md:mb-16">
           Honoring the Visionaries of Our <i>Samaj</i>
