@@ -64,12 +64,14 @@ export default function Header() {
       </header>
 
       {/* Mobile drawer menu */}
-      <div
-        className={clsx(
-          'fixed top-0 left-0 h-screen w-screen bg-black flex flex-col gap-4 px-6 py-6 transform transition-transform duration-300',
-          isOpen ? 'translate-x-0' : '-translate-x-full'
-        )}
-      >
+     {/* Mobile drawer menu */}
+<div
+  className={clsx(
+    'fixed top-0 left-0 h-screen w-screen bg-black flex flex-col gap-4 px-6 py-6 transform transition-transform duration-300 z-50', // add z-50
+    isOpen ? 'translate-x-0' : '-translate-x-full'
+  )}
+>
+
         {/* Close button */}
         <IconX
           className="ml-auto text-white w-7 h-7 cursor-pointer"
@@ -77,7 +79,7 @@ export default function Header() {
         />
 
         {/* Mobile nav links */}
-        <nav className="mt-6 flex flex-col gap-3">
+        <nav className="mt-6 flex flex-col gap-3 z-99">
           {links.map((link) => (
             <Link
               key={link.text}
