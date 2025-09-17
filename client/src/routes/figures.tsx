@@ -7,24 +7,20 @@ export const Route = createFileRoute('/figures')({
 
 // Top 8 with images
 const topFigures = [
-  { name: 'Shri Ramprasad Vishwakarma', role: 'Founder & Community Leader (1902-1975)', img: '/1.png', desc: '' },
-  { name: 'Smt. Kiran Devi Vishwakarma', role: 'Education Advocate (1938-2005)', img: '/2.png', desc: '' },
-  { name: 'Pandit Raghunath Vishwakarma', role: 'Cultural Preserver (1920-1988)', img: '/3.png', desc: '' },
-  { name: 'Shri Anil Kumar Vishwakarma', role: 'Modern Philanthropist (1965-Present)', img: '/4.png', desc: '' },
-  { name: 'Swa. Angad Bagedu Vishwakarma', role: 'Founder', img: '/5.png', desc: '' },
-  { name: 'Swa. Bhuidhar Katwaru Vishwakarma', role: 'Founder', img: '/6.png', desc: '' },
-  { name: 'Shri Kalpanath Bagedu Vishwakarma', role: 'Founder', img: '/7.png', desc: '' },
-  { name: 'Shri Nanhelal Mangruram Vishwakarma', role: 'Founder', img: '/8.png', desc: '' },
+  
+  { name: 'Swa. Angad Bagedu Vishwakarma', role: 'Founder', img: '/1.png', desc: '' },
+  { name: 'Swa. Bhuidhar Katwaru Vishwakarma', role: 'Founder', img: '/2.png', desc: '' },
+  { name: 'Shri Kalpanath Bagedu Vishwakarma', role: 'Founder', img: '/3.png', desc: '' },
+  { name: 'Shri Nanhelal Mangruram Vishwakarma', role: 'Founder', img: '/4.png', desc: '' },
+  { name: 'Shri Ramlal Mangruram Vishwakarma', role: 'Founder/Vice President', img: '/5.png', desc: '' },
+  { name: 'Ramjeet Vishwakarma', role: 'President', img: '/6.png', desc: '' },
+  { name: 'Shivsagar Vishwakarma', role: 'Treasurer', img: '/7.png', desc: '' },
+  { name: 'Parshuram Vishwakarma', role: 'Executive Chairman' , img: '/8.png', desc: '' },
 ]
 
 
 // Remaining members (no images)
 const otherMembers = [
-  { name: 'Shri Ramlal Mangruram Vishwakarma', role: 'Founder/Vice President' },
-  { name: 'Ramjeet Vishwakarma', role: 'President' },
-  { name: 'Nanhelal Vishwakarma', role: 'Founder/Secretary' },
-  { name: 'Shivsagar Vishwakarma', role: 'Treasurer' },
-  { name: 'Parshuram Vishwakarma', role: 'Executive Chairman' },
   { name: 'Manoj Vishwakarma', role: 'Administrator' },
   { name: 'Virendra Vishwakarma', role: 'Administrator' },
   { name: 'Tribhuvan Sharma', role: 'Administrator' },

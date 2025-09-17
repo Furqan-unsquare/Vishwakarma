@@ -42,22 +42,22 @@ function Hero() {
       </div>
 
       {/* Right Section (Images) */}
-      <div className="w-full h-1/2 max-h-screen relative md:h-4/5 rounded-bl-3xl">
+      <div className="w-full h-1/2 max-h-screen relative md:h-4/5 rounded-bl-3xl md:mt-24">
         <img
-          className="w-full h-full object-cover rounded-bl-4xl"
-          src="https://img.freepik.com/free-photo/cheerful-friends-posing-party_23-2148231957.jpg"
+          className="w-full h-full object-cover md:rounded-bl-4xl"
+          src="https://i.pinimg.com/1200x/fc/24/f1/fc24f142a356e2ef1993d6458ad2aa2a.jpg"
           alt="bunch of random people"
         />
-        <img
+        {/* <img
           src="https://img.freepik.com/free-photo/smiling-people-white-background_23-2147576858.jpg"
           alt="bunch of random people 2"
           className="w-[150px] md:w-[250px] absolute top-full left-0 -translate-y-1/2 -rotate-25 aspect-auto border-4 border-white rounded-lg"
-        />
-        <img
+        /> */}
+        {/* <img
           src="https://img.freepik.com/free-photo/community-concept-with-group-people_23-2147993335.jpg?t=st=1756742027~exp=1756745627~hmac=a9e70e81b5e9ad8254a1b8797a92dd1fff89af27468851703192d4b6c4ee3eca&w=2000"
           alt="bunch of random people 3"
           className="w-[150px] rotate-10 absolute top-[100px] left-0 hidden md:inline -translate-x-1/2 rounded-lg"
-        />
+        /> */}
       </div>
     </section>
   )

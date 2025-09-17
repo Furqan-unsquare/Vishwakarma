@@ -20,7 +20,7 @@ function WhoWeAre() {
           <span className="text-Orange">Heritage & Unity</span>
         </h1>
         <img
-          src="https://img.freepik.com/free-photo/friends-circle-with-heads-together-making-photo-from_1139-606.jpg"
+          src="/unity.png"
           alt="community circle"
           className="w-full h-full max-h-[400px] rounded-br-[50px] rounded-xl object-cover"
         />
