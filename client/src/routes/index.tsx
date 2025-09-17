@@ -18,7 +18,7 @@ function App() {
     <main className="overflow-x-hidden">
       <Hero />
       <WhoWeAre />
-      <VideoWork />
+      {/* <VideoWork /> */}
       <ProminentFigures />
       <Support />
       <Work />

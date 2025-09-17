@@ -13,12 +13,12 @@ function Logo() {
       {/* Text section */}
       <div className="flex flex-col">
         {/* Tagline */}
-        <span className="text-[10px] sm:text-xs md:text-sm text-gray-600 font-Dm-Sans leading-tight">
+        <span className="text-sm md:text-md text-gray-600 font-Dm-Sans leading-tight">
           ॥ Om Vishwakarmane Namah ॥ ॥ Om Devo Vishwakarma Namah ॥
         </span>
 
         {/* Main title */}
-        <p className="font-Poppins text-sm sm:text-base md:text-lg lg:text-xl font-semibold leading-snug">
+        <p className="font-Poppins text-lg lg:text-xl font-semibold leading-snug">
           Shri Vishwakarma Panchal Samaj Association, Thane
         </p>
       </div>
