@@ -3,7 +3,7 @@ import { Link } from '@tanstack/react-router'
 
 function Hero() {
   return (
-    <section className="bg-parchment w-full min-h-screen font-Dm-Sans overflow-hidden md:grid md:grid-cols-2">
+    <section className="bg-parchment w-full min-h-screen font-Dm-Sans overflow-hidden md:grid md:grid-cols-2 mt-10 md:mt-0">
       {/* Left Section */}
       <div className="px-6 pt-28 pb-16 md:pt-32 md:pb-20 md:px-20 lg:px-32 flex flex-col justify-center">
         <h1 className="font-Poppins font-semibold text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-snug mb-6 text-center md:text-left text-gray-900">
