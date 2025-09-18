@@ -10,7 +10,8 @@ export const auth = betterAuth({
   }),
   trustedOrigins: [
     "https://vishwakarma.onrender.com",
-    "https://admin-vishwakarma-unsquare.netlify.app/",
+    "https://admin-vishwakarma-unsquare.netlify.app",
+    "https://vishwakarma-unsquare.netlify.app",
   ],
   emailAndPassword: {
     enabled: true,

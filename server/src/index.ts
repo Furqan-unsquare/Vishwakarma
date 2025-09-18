@@ -10,7 +10,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["https://admin-vishwakarma-unsquare.netlify.app/"],
+    origin: [
+      "https://admin-vishwakarma-unsquare.netlify.app",
+      "https://vishwakarma-unsquare.netlify.app",
+    ],
     credentials: true,
   })
 );
