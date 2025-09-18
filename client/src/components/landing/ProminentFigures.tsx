@@ -1,5 +1,3 @@
-import { IconLeaf } from '@tabler/icons-react'
-
 const leaders = [
   {
     id: 1,

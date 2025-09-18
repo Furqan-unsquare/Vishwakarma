@@ -96,7 +96,7 @@ export const SigninForm = () => {
       </div>
 
       <Link className="text-right" to="/auth/signup">
-        Don’t have an account?{' '}
+        Don’t have an account?
         <span className="text-blue-400">Register Now</span>
       </Link>
       {formError && <p className="text-red-500 text-sm">{formError}</p>}

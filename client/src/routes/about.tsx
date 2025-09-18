@@ -40,86 +40,11 @@ const Values = [
 ]
 
 function RouteComponent() {
-  const carouselRef = useRef<HTMLDivElement>(null)
-  const [isDragging, setIsDragging] = useState(false)
-  const [startX, setStartX] = useState(0)
-  const [scrollLeft, setScrollLeft] = useState(0)
-  const [velocity, setVelocity] = useState(0)
-
-  const handleMouseDown = useCallback(
-    (
-      e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>,
-    ) => {
-      if (!carouselRef.current) return
-      setIsDragging(true)
-      const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX
-      setStartX(clientX)
-      setScrollLeft(carouselRef.current.scrollLeft)
-      setVelocity(0)
-      carouselRef.current.style.cursor = 'grabbing'
-    },
-    [],
-  )
-
-  const handleMouseMove = useCallback(
-    (
-      e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>,
-    ) => {
-      if (!isDragging || !carouselRef.current) return
-      e.preventDefault()
-      const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX
-      const x = clientX - startX
-      const newScrollLeft = scrollLeft - x
-      const maxScroll =
-        carouselRef.current.scrollWidth - carouselRef.current.clientWidth
-
-      // Smooth boundary handling
-      if (newScrollLeft < 0 || newScrollLeft > maxScroll) {
-        const resistance = 0.5 // Reduce movement at boundaries
-        carouselRef.current.scrollLeft = scrollLeft - x * resistance
-      } else {
-        carouselRef.current.scrollLeft = newScrollLeft
-      }
-      setVelocity(x)
-    },
-    [isDragging, startX, scrollLeft],
-  )
-
-  const handleMouseUp = useCallback(() => {
-    if (!carouselRef.current) return
-    setIsDragging(false)
-    carouselRef.current.style.cursor = 'grab'
-
-    // Apply momentum for smooth stop
-    const momentum = () => {
-      if (Math.abs(velocity) < 0.1 || !carouselRef.current) {
-        return
-      }
-      carouselRef.current.scrollLeft -= velocity
-      setVelocity(velocity * 0.95) // Dampen velocity
-      requestAnimationFrame(momentum)
-    }
-    requestAnimationFrame(momentum)
-  }, [velocity])
-
-  useEffect(() => {
-    const carousel = carouselRef.current
-    if (!carousel) return
-
-    const handleWheel = (e: WheelEvent) => {
-      e.preventDefault()
-      carousel.scrollLeft += e.deltaY * 0.5 // Smoother wheel scrolling
-    }
-
-    carousel.addEventListener('wheel', handleWheel, { passive: false })
-    return () => carousel.removeEventListener('wheel', handleWheel)
-  }, [])
-
   return (
     <div className="w-full min-h-screen font-Dm-Sans overflow-hidden">
       <div className=" py-38 px-4 pb-8 md:px-32 text-center md:text-left">
         <h1 className="font-Poppins font-semibold text-3xl md:text-5xl tracking-tight leading-tight md:leading-[1.2] mb-4">
-          Together We Build, Grow, Support and Celebrate{' '}
+          Together We Build, Grow, Support and Celebrate
           <span className="text-Orange">Vishwakarma Samaja</span>
         </h1>
         <p className="text-gray-600 text-base md:text-lg leading-relaxed max-w-2xl mx-auto md:mx-0">
