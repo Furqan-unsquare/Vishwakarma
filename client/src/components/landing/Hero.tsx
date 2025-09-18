@@ -1,5 +1,4 @@
 import { IconArrowRight } from '@tabler/icons-react'
-import { Link } from '@tanstack/react-router'
 
 function Hero() {
   return (
@@ -31,7 +30,7 @@ function Hero() {
           </a>
           <a
             href="/#upcoming"
-            className="px-7 py-3 w-full sm:w-auto rounded-sm outline outline-2 outline-Orange 
+            className="px-7 py-3 w-full sm:w-auto rounded-sm outline outline-Orange 
             bg-white/10 hover:bg-white/15 active:bg-white/20 
             flex items-center justify-center gap-2 shadow-lg 
             transition-all active:scale-95 text-gray-900 md:text-black"
