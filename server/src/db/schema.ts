@@ -17,8 +17,6 @@ import {
   createSelectSchema,
   createUpdateSchema,
 } from "drizzle-arktype";
-import { type } from "arktype";
-import { number } from "arktype/out/keywords/number";
 
 export const paymentModeEnum = pgEnum("payment_mode_enum", [
   "cash",
@@ -149,9 +147,8 @@ export const schema = {
   donations,
 };
 
+export type Event = InferSelectModel<typeof events>;
+export type Donation = InferSelectModel<typeof donations>;
 
-export type Event = InferSelectModel<typeof events>
-export type Donation = InferSelectModel<typeof donations>
-
-export type NewEvent = InferInsertModel<typeof events>
-export type NewDonation = InferInsertModel<typeof donations>
+export type NewEvent = InferInsertModel<typeof events>;
+export type NewDonation = InferInsertModel<typeof donations>;

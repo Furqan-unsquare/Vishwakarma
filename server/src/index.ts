@@ -1,5 +1,4 @@
 import "dotenv/config";
-import logger from "./config/pino-config.js";
 import express from "express";
 import cors from "cors";
 import { pinoHttp } from "pino-http";
@@ -10,9 +9,6 @@ import { auth } from "./lib/auth.js";
 import DonationRoutes from "./routes/donation.js";
 import EventRoutes from "./routes/events.js";
 const app = express();
-
-// LOGGER INIT
-app.use(pinoHttp({ logger }));
 
 app.use(
   cors({
@@ -40,5 +36,4 @@ const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log(`Process started at PORT ${PORT}`);
-  logger.info(`Process started at PORT ${PORT}`);
 });
