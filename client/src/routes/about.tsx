@@ -6,7 +6,7 @@ import {
   IconArrowRight,
 } from '@tabler/icons-react'
 import { createFileRoute } from '@tanstack/react-router'
-import { useState, useRef, useEffect, useCallback } from 'react'
+import { useState } from 'react'
 
 export const Route = createFileRoute('/about')({
   component: RouteComponent,
