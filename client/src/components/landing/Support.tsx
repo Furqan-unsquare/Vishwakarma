@@ -4,9 +4,7 @@ function Support() {
       <div className="relative h-[500px] md:h-[600px] w-full overflow-hidden">
         {/* Background Image */}
         <img
-          src="https://img.freepik.com/free-photo/we-are-always-good-mood_329181-8497.jpg"
-          srcSet="https://img.freepik.com/free-photo/we-are-always-good-mood_329181-8497.jpg?w=360 360w, https://img.freepik.com/free-photo/we-are-always-good-mood_329181-8497.jpg?w=740 740w, https://img.freepik.com/free-photo/we-are-always-good-mood_329181-8497.jpg?w=1060 1060w, https://img.freepik.com/free-photo/we-are-always-good-mood_329181-8497.jpg?w=1480 1480w, https://img.freepik.com/free-photo/we-are-always-good-mood_329181-8497.jpg?w=2000 2000w"
-          sizes="(max-width: 480px) 100vw, (max-width: 1096px) calc(100vw - 40px), 100vw"
+          src="/community.jpg"
           className="w-full h-full object-cover"
           alt="Community support"
         />

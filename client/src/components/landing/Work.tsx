@@ -19,7 +19,7 @@ function Work() {
       <div className="grid gap-8 md:grid-cols-2 md:gap-12 items-center">
         {/* Left Image */}
         <img
-          src="https://img.freepik.com/free-photo/cheerful-friends-posing-party_23-2148231957.jpg"
+          src="/work.png"
           alt="community members together"
           className="rounded-xl object-cover w-full h-full"
         />

@@ -38,7 +38,9 @@ function RouteComponent() {
   const [selectedEvent, setSelectedEvent] = useState<GroupedDonation | null>(
     null,
   )
-  const [newDonation, setNewDonation] = useState<StreamedDonation | null>(fakeDonation)
+  const [newDonation, setNewDonation] = useState<StreamedDonation | null>(
+    fakeDonation,
+  )
 
   const { data, error, refetch, isLoading } = useQuery<
     GroupedDonation[],
@@ -52,8 +54,10 @@ function RouteComponent() {
           throw new Error('Failed to fetch donations. Please try again later')
         }
         const data = await res.json()
-        if (data.donations.length > 0) {
+        if (data.donations && data.donations.length > 0) {
           setSelectedEvent(data.donations[0])
+        } else {
+          throw new Error('Failed to fetch donations. Please try again')
         }
         return data.donations
       } catch (error) {

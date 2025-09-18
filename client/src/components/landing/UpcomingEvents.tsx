@@ -1,39 +1,26 @@
 import { IconCalendar } from '@tabler/icons-react'
 
-const IMGURL =
-  'https://img.freepik.com/free-photo/species-fruits-surround-indian-parents-preparing-paste_8353-755.jpg'
-const IMGSRCSET =
-  'https://img.freepik.com/free-photo/species-fruits-surround-indian-parents-preparing-paste_8353-755.jpg?w=360 360w, https://img.freepik.com/free-photo/species-fruits-surround-indian-parents-preparing-paste_8353-755.jpg?w=740 740w, https://img.freepik.com/free-photo/species-fruits-surround-indian-parents-preparing-paste_8353-755.jpg?w=1060 1060w, https://img.freepik.com/free-photo/species-fruits-surround-indian-parents-preparing-paste_8353-755.jpg?w=1480 1480w, https://img.freepik.com/free-photo/species-fruits-surround-indian-parents-preparing-paste_8353-755.jpg?w=2000 2000w'
-const IMGSIZES =
-  '(max-width: 480px) 100vw, (max-width: 768px) 80vw, (max-width: 1096px) 50vw, 33vw'
-
 const upcomingEvents = [
   {
     id: 1,
     title: 'Cultural Gathering',
     subtitle: 'Community cultural programs & social evening',
-    date: '18th Sep, 2025 — 5:30 PM',
-    imgUrl: IMGURL,
-    imgSet: IMGSRCSET,
-    imgSizes: IMGSIZES,
+    date: '17th Sep, 2025 — 5:30 PM',
+    imgUrl: '/gathering.png',
   },
   {
     id: 2,
     title: 'Special Session',
     subtitle: 'Focused community discussion & prayers',
-    date: '18th Sep, 2025 — 8:30 PM',
-    imgUrl: IMGURL,
-    imgSet: IMGSRCSET,
-    imgSizes: IMGSIZES,
+    date: '17th Sep, 2025 — 8:30 PM',
+    imgUrl: '/prayers.png',
   },
   {
     id: 3,
     title: 'Social Dinner',
     subtitle: 'Community dinner & bonding after cultural programs',
-    date: '18th Sep, 2025 — 9:30 PM',
-    imgUrl: IMGURL,
-    imgSet: IMGSRCSET,
-    imgSizes: IMGSIZES,
+    date: '17th Sep, 2025 — 9:30 PM',
+    imgUrl: '/food.png',
   },
 ]
 
@@ -67,9 +54,7 @@ function UpcomingEvents() {
           >
             <img
               src={event.imgUrl}
-              srcSet={event.imgSet}
               alt={'Image for ' + event.title}
-              sizes={event.imgSizes}
               className="rounded-[28px] w-full aspect-square object-cover"
             />
             <div className="p-4">

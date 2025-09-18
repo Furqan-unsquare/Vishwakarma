@@ -44,7 +44,10 @@ export const addDonation = async (req: Request, res: Response) => {
       ...newDonation,
       eventName: event[0].eventName,
     };
+
     res.status(201).json(donation);
+    console.log("All clients", clients.length);
+
     clients.forEach((client) =>
       client.res.write(`data: ${JSON.stringify(donation)}\n\n`)
     );
@@ -146,9 +149,6 @@ export const streamDonations = async (req: Request, res: Response) => {
   console.log(clients.length);
 
   try {
-    // const allDonations = await db.query.donations.findMany({
-    //   orderBy: (donations, { desc }) => [desc(donations.amount)],
-    // });
     const allDonations = await db
       .select({
         eventName: events.name,
@@ -169,6 +169,8 @@ export const streamDonations = async (req: Request, res: Response) => {
     res.write(`data: ${JSON.stringify(allDonations)}\n\n`);
     const clientId = Date.now();
     clients.push({ id: clientId, res });
+    console.log("Connected a client.", clients.length);
+
     req.on("close", () => {
       console.log(`${clientId} Connection closed`);
       clients = clients.filter((client) => client.id !== clientId);

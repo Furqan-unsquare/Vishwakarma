@@ -4,15 +4,7 @@ function Donation() {
       <div className="relative h-[700px] md:h-[600px] lg:h-[500px] w-full overflow-hidden">
         {/* Background Image */}
         <img
-          src="https://img.freepik.com/free-photo/people-joining-hands-together-group-friends-keeping-hands-together_8353-6925.jpg"
-          srcSet="
-            https://img.freepik.com/free-photo/people-joining-hands-together-group-friends-keeping-hands-together_8353-6925.jpg?w=360 360w,
-            https://img.freepik.com/free-photo/people-joining-hands-together-group-friends-keeping-hands-together_8353-6925.jpg?w=740 740w,
-            https://img.freepik.com/free-photo/people-joining-hands-together-group-friends-keeping-hands-together_8353-6925.jpg?w=1060 1060w,
-            https://img.freepik.com/free-photo/people-joining-hands-together-group-friends-keeping-hands-together_8353-6925.jpg?w=1480 1480w,
-            https://img.freepik.com/free-photo/people-joining-hands-together-group-friends-keeping-hands-together_8353-6925.jpg?w=2000 2000w
-          "
-          sizes="(max-width: 480px) 100vw, (max-width: 1024px) 100vw, 100vw"
+          src="/hands.png"
           className="w-full h-full object-cover"
           alt="Community hands joined together"
         />

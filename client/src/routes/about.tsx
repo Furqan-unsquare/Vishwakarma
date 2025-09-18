@@ -1,5 +1,10 @@
 import Footer from '@/components/Footer'
-import { IconBuildingCastle, IconRocket, IconUsers, IconArrowRight } from '@tabler/icons-react'
+import {
+  IconBuildingCastle,
+  IconRocket,
+  IconUsers,
+  IconArrowRight,
+} from '@tabler/icons-react'
 import { createFileRoute } from '@tanstack/react-router'
 import { useState, useRef, useEffect, useCallback } from 'react'
 
@@ -8,30 +13,12 @@ export const Route = createFileRoute('/about')({
 })
 
 const ImageUrls = [
-  {
-    imgUrl: 'https://img.freepik.com/free-photo/friends-enjoying-rooftop-party_158595-4902.jpg',
-    imgSizes: '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw',
-  },
-  {
-    imgUrl: 'https://img.freepik.com/free-photo/friends-enjoying-rooftop-party_158595-4902.jpg',
-    imgSizes: '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw',
-  },
-  {
-    imgUrl: 'https://img.freepik.com/free-photo/friends-enjoying-rooftop-party_158595-4902.jpg',
-    imgSizes: '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw',
-  },
-   {
-    imgUrl: 'https://img.freepik.com/free-photo/friends-enjoying-rooftop-party_158595-4902.jpg',
-    imgSizes: '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw',
-  },
-  {
-    imgUrl: 'https://img.freepik.com/free-photo/friends-enjoying-rooftop-party_158595-4902.jpg',
-    imgSizes: '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw',
-  },
-  {
-    imgUrl: 'https://img.freepik.com/free-photo/friends-enjoying-rooftop-party_158595-4902.jpg',
-    imgSizes: '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw',
-  },
+  '/gathering.png',
+  '/artisan.png',
+  '/temple.jpg',
+  '/prayers.png',
+  '/peopleinhouse.png',
+  '/shop.png',
 ]
 
 const Values = [
@@ -59,33 +46,44 @@ function RouteComponent() {
   const [scrollLeft, setScrollLeft] = useState(0)
   const [velocity, setVelocity] = useState(0)
 
-  const handleMouseDown = useCallback((e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>) => {
-    if (!carouselRef.current) return
-    setIsDragging(true)
-    const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX
-    setStartX(clientX)
-    setScrollLeft(carouselRef.current.scrollLeft)
-    setVelocity(0)
-    carouselRef.current.style.cursor = 'grabbing'
-  }, [])
+  const handleMouseDown = useCallback(
+    (
+      e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>,
+    ) => {
+      if (!carouselRef.current) return
+      setIsDragging(true)
+      const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX
+      setStartX(clientX)
+      setScrollLeft(carouselRef.current.scrollLeft)
+      setVelocity(0)
+      carouselRef.current.style.cursor = 'grabbing'
+    },
+    [],
+  )
 
-  const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>) => {
-    if (!isDragging || !carouselRef.current) return
-    e.preventDefault()
-    const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX
-    const x = clientX - startX
-    const newScrollLeft = scrollLeft - x
-    const maxScroll = carouselRef.current.scrollWidth - carouselRef.current.clientWidth
+  const handleMouseMove = useCallback(
+    (
+      e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>,
+    ) => {
+      if (!isDragging || !carouselRef.current) return
+      e.preventDefault()
+      const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX
+      const x = clientX - startX
+      const newScrollLeft = scrollLeft - x
+      const maxScroll =
+        carouselRef.current.scrollWidth - carouselRef.current.clientWidth
 
-    // Smooth boundary handling
-    if (newScrollLeft < 0 || newScrollLeft > maxScroll) {
-      const resistance = 0.5 // Reduce movement at boundaries
-      carouselRef.current.scrollLeft = scrollLeft - x * resistance
-    } else {
-      carouselRef.current.scrollLeft = newScrollLeft
-    }
-    setVelocity(x)
-  }, [isDragging, startX, scrollLeft])
+      // Smooth boundary handling
+      if (newScrollLeft < 0 || newScrollLeft > maxScroll) {
+        const resistance = 0.5 // Reduce movement at boundaries
+        carouselRef.current.scrollLeft = scrollLeft - x * resistance
+      } else {
+        carouselRef.current.scrollLeft = newScrollLeft
+      }
+      setVelocity(x)
+    },
+    [isDragging, startX, scrollLeft],
+  )
 
   const handleMouseUp = useCallback(() => {
     if (!carouselRef.current) return
@@ -125,30 +123,17 @@ function RouteComponent() {
           <span className="text-Orange">Vishwakarma Samaja</span>
         </h1>
         <p className="text-gray-600 text-base md:text-lg leading-relaxed max-w-2xl mx-auto md:mx-0">
-          Shree Vishwakarma Panchal Samaj Association, Thane, is a community dedicated to unity, cultural heritage, and social progress. Since its establishment in 2003, we have empowered youth, women, and elders through education, employment opportunities, and the preservation of our rich traditions.
+          Shree Vishwakarma Panchal Samaj Association, Thane, is a community
+          dedicated to unity, cultural heritage, and social progress. Since its
+          establishment in 2003, we have empowered youth, women, and elders
+          through education, employment opportunities, and the preservation of
+          our rich traditions.
         </p>
       </div>
 
-      <div
-        ref={carouselRef}
-        className="flex items-center gap-3 mb-12 overflow-x-auto scrollbar-hidden scroll-smooth snap-x snap-mandatory px-4 md:px-32 md:snap-none cursor-grab select-none"
-        onMouseDown={handleMouseDown}
-        onMouseMove={handleMouseMove}
-        onMouseUp={handleMouseUp}
-        onMouseLeave={handleMouseUp}
-        onTouchStart={handleMouseDown}
-        onTouchMove={handleMouseMove}
-        onTouchEnd={handleMouseUp}
-      >
+      <div className="flex flex-nowrap items-center gap-4 mb-12 overflow-x-scroll px-4 md:px-32 scrollbar-hidden">
         {ImageUrls.map((image, i) => (
-          <img
-            key={i}
-            src={image.imgUrl}
-            sizes={image.imgSizes}
-            className="flex-shrink-0 snap-center rounded-lg shadow-sm max-h-[240px] sm:max-h-[300px] md:max-h-[360px] object-cover w-[85vw] sm:w-[60vw] md:w-[30vw]"
-            alt={`Community image ${i + 1}`}
-            loading="lazy"
-          />
+          <img key={i} src={image} className="max-h-[400px] object-cover" />
         ))}
       </div>
 
@@ -168,16 +153,32 @@ function Roots() {
       <div>
         <h2 className="text-3xl md:text-4xl font-semibold mb-3">Our Roots</h2>
         <h4 className="text-lg md:text-xl leading-relaxed text-gray-700">
-          Vishwakarma Samaj stands on the timeless foundation of craftsmanship, unity, and resilience, inspiring us to honor our ancestors’ wisdom while building a brighter future.
+          Vishwakarma Samaj stands on the timeless foundation of craftsmanship,
+          unity, and resilience, inspiring us to honor our ancestors’ wisdom
+          while building a brighter future.
         </h4>
       </div>
       <div>
-        <p className={`tracking-wide text-gray-600 leading-relaxed text-base md:text-lg ${expanded ? '' : 'line-clamp-4 md:line-clamp-none'}`}>
-          For centuries, the Vishwakarmas have been revered as architects of creativity, design, and engineering in India. Descended from the five sons of Lord Vishwakarma—Manu (blacksmiths), Maya (carpenters), Twosta (metalworkers), Silpy (sculptors), and Viswajna (goldsmiths)—our community has crafted temples, sculptures, and monuments that embody skill and devotion.
-          <br /><br />
-          Historically, Vishwakarma Samaj was a guild of artisans and a spiritual community, worshipping Shree Vishwakarma and Gayatri Devi with unique rites and traditions, establishing us as cultural torchbearers of Hindu dharma.
-          <br /><br />
-          Today, despite challenges like poverty and lack of education, our ancestors’ legacy drives us to foster unity, education, and heritage, reclaiming our role as cultural guardians and pioneers of progress.
+        <p
+          className={`tracking-wide text-gray-600 leading-relaxed text-base md:text-lg ${expanded ? '' : 'line-clamp-4 md:line-clamp-none'}`}
+        >
+          For centuries, the Vishwakarmas have been revered as architects of
+          creativity, design, and engineering in India. Descended from the five
+          sons of Lord Vishwakarma—Manu (blacksmiths), Maya (carpenters), Twosta
+          (metalworkers), Silpy (sculptors), and Viswajna (goldsmiths)—our
+          community has crafted temples, sculptures, and monuments that embody
+          skill and devotion.
+          <br />
+          <br />
+          Historically, Vishwakarma Samaj was a guild of artisans and a
+          spiritual community, worshipping Shree Vishwakarma and Gayatri Devi
+          with unique rites and traditions, establishing us as cultural
+          torchbearers of Hindu dharma.
+          <br />
+          <br />
+          Today, despite challenges like poverty and lack of education, our
+          ancestors’ legacy drives us to foster unity, education, and heritage,
+          reclaiming our role as cultural guardians and pioneers of progress.
         </p>
         <button
           onClick={() => setExpanded(!expanded)}

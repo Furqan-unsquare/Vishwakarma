@@ -1,8 +1,13 @@
+import authClient from '@/lib/authClient'
 import Logo from './Logo'
+import { useNavigate } from '@tanstack/react-router'
 
 export default function Header() {
-  // TODO: ADD LOGOUT
-  const handleLogout = () => {}
+  const navigate = useNavigate()
+  const handleLogout = async () => {
+    await authClient.signOut()
+    navigate({ to: '/' })
+  }
   return (
     <>
       <header className="flex justify-between items-center px-8 py-4 border-b border-gray-200">
