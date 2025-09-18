@@ -2,6 +2,7 @@ import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import db from "../db/db.js";
 import { schema } from "../db/schema.js";
+import { sessionSchema } from "better-auth/db";
 
 export const auth = betterAuth({
   database: drizzleAdapter(db, {
@@ -20,6 +21,14 @@ export const auth = betterAuth({
     cookieCache: {
       enabled: true,
       maxAge: 5 * 60,
+    },
+  },
+  advanced: {
+    useSecureCookies: true,
+    cookies: {
+      sessionSchema: {
+        attributes: { sameSite: "None", secure: true, httpOnly: true },
+      },
     },
   },
 });
