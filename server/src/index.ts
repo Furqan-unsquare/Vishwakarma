@@ -1,8 +1,6 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
-import { pinoHttp } from "pino-http";
-// import cookieParser from "cookie-parser";
 import { toNodeHandler } from "better-auth/node";
 import { auth } from "./lib/auth.js";
 
@@ -12,7 +10,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:5174"],
+    origin: ["https://admin-vishwakarma-unsquare.netlify.app/"],
     credentials: true,
   })
 );
@@ -21,7 +19,6 @@ app.use(
 app.all("/api/auth/{*splat}", toNodeHandler(auth));
 
 // MIDDLEWARE INIT
-// app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded());
 

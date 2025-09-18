@@ -8,7 +8,10 @@ export const auth = betterAuth({
     provider: "pg",
     schema,
   }),
-  trustedOrigins: ["https://vishwakarma.onrender.com", "http://localhost:5174"],
+  trustedOrigins: [
+    "https://vishwakarma.onrender.com",
+    "https://admin-vishwakarma-unsquare.netlify.app/",
+  ],
   emailAndPassword: {
     enabled: true,
   },
