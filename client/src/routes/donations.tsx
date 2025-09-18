@@ -15,20 +15,6 @@ import { useEffect, useState } from 'react'
 import { DonationPopup } from '@/components/donation/DonationPopup'
 import { InfoBoxes } from '@/components/donation/InfoBoxes'
 
-// TODO: REMOVE THIS
-const fakeDonation: StreamedDonation = {
-  amount: 150,
-  createdAt: new Date(),
-  donatorName: 'HOLA',
-  eventId: 2,
-  eventName: 'Gamnda',
-  id: 1,
-  message: 'aaja bhidle',
-  paymentMode: 'card',
-  transactionId: '1324',
-  updatedAt: new Date(),
-}
-
 export const Route = createFileRoute('/donations')({
   component: RouteComponent,
 })
@@ -38,9 +24,7 @@ function RouteComponent() {
   const [selectedEvent, setSelectedEvent] = useState<GroupedDonation | null>(
     null,
   )
-  const [newDonation, setNewDonation] = useState<StreamedDonation | null>(
-    fakeDonation,
-  )
+  const [newDonation, setNewDonation] = useState<StreamedDonation | null>(null)
 
   const { data, error, refetch, isLoading } = useQuery<
     GroupedDonation[],

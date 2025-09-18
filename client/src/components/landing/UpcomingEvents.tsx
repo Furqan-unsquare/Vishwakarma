@@ -26,7 +26,7 @@ const upcomingEvents = [
 
 function UpcomingEvents() {
   return (
-    <article className="w-screen overflow-hidden px-4 py-8 font-Dm-Sans md:px-32 md:py-16">
+    <article id='upcoming' className="w-screen overflow-hidden px-4 py-8 font-Dm-Sans md:px-32 md:py-16">
       {/* Heading */}
       <h1 className="font-Poppins font-semibold text-3xl text-center tracking-tight mb-2 md:text-5xl md:leading-14">
         Featured News

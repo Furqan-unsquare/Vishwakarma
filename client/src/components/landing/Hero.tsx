@@ -14,30 +14,30 @@ function Hero() {
           <br /> Care
         </h1>
         <p className="text-gray-800 text-base sm:text-lg md:text-xl text-center md:text-left mb-8 max-w-xl mx-auto md:mx-0">
-          Shree Vishwakarma Panchal Samaj Association stands for unity, service, and progress — preserving
-          our heritage while empowering future generations.
+          Shree Vishwakarma Panchal Samaj Association stands for unity, service,
+          and progress — preserving our heritage while empowering future
+          generations.
         </p>
 
-        {/* CTA Buttons */}
         <div className="flex flex-col gap-3 justify-center items-center sm:flex-row md:justify-start">
-          <Link
-            to="/"
+          <a
+            href="/#donation"
             className="px-7 py-3 w-full sm:w-auto rounded-sm bg-Orange hover:bg-Orange-Hover active:bg-Orange-Active 
             bg-gradient-to-tr from-transparent from-50% to-white/50 
             text-white flex shadow-lg items-center justify-center gap-2 
             transition-all active:scale-95"
           >
             Donate <IconArrowRight />
-          </Link>
-          <Link
-            to="/"
+          </a>
+          <a
+            href="/#upcoming"
             className="px-7 py-3 w-full sm:w-auto rounded-sm outline outline-2 outline-Orange 
             bg-white/10 hover:bg-white/15 active:bg-white/20 
             flex items-center justify-center gap-2 shadow-lg 
             transition-all active:scale-95 text-gray-900 md:text-black"
           >
             Plan your visit
-          </Link>
+          </a>
         </div>
       </div>
 

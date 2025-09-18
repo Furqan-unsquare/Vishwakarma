@@ -53,21 +53,22 @@ function WhoWeAre() {
               </p>
 
               <ul className="list-disc list-inside text-gray-600 mt-3 space-y-2">
-                <li>
+                <li key="1">
                   Empower youth, women, and elders by creating opportunities for
                   growth.
                 </li>
-                <li>
-                  Preserve and promote traditions that honor our shared identity.
+                <li key="2">
+                  Preserve and promote traditions that honor our shared
+                  identity.
                 </li>
-                <li>
+                <li key="3">
                   Encourage social responsibility among the younger generation.
                 </li>
-                <li>
+                <li key="4">
                   Provide support to those in need, ensuring no member is left
                   behind.
                 </li>
-                <li>
+                <li key="5">
                   This commitment reflects our vision of a strong, united, and
                   progressive society rooted in heritage and compassion.
                 </li>
@@ -94,21 +95,21 @@ function WhoWeAre() {
           </p>
 
           <ul className="list-disc list-inside text-gray-600 mt-3 space-y-2">
-            <li>
+            <li key="1">
               Empower youth, women, and elders by creating opportunities for
               growth.
             </li>
-            <li>
+            <li key="2">
               Preserve and promote traditions that honor our shared identity.
             </li>
-            <li>
+            <li key="3">
               Encourage social responsibility among the younger generation.
             </li>
-            <li>
+            <li key="4">
               Provide support to those in need, ensuring no member is left
               behind.
             </li>
-            <li>
+            <li key="5">
               This commitment reflects our vision of a strong, united, and
               progressive society rooted in heritage and compassion.
             </li>
