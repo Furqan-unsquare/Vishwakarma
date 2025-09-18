@@ -27,11 +27,27 @@ export const auth = betterAuth({
     useSecureCookies: true,
     cookies: {
       sessionStorage: {
-        attributes: { sameSite: "None", secure: true, httpOnly: true },
+        attributes: {
+          sameSite: "None",
+          secure: true,
+          httpOnly: true,
+          partitioned: true,
+        },
       },
       sessionSchema: {
-        attributes: { sameSite: "None", secure: true, httpOnly: true },
+        attributes: {
+          sameSite: "None",
+          secure: true,
+          httpOnly: true,
+          partitioned: true,
+        },
       },
+    },
+    defaultCookieAttributes: {
+      sameSite: "None",
+      secure: true,
+      partitioned: true,
+      httpOnly: true,
     },
   },
 });
