@@ -51,7 +51,9 @@ function RouteComponent() {
   })
 
   useEffect(() => {
-    const events = new EventSource('http://localhost:3000/donation/stream')
+    const events = new EventSource(
+      'https://vishwakarma.onrender.com/donation/stream',
+    )
     events.onmessage = (event) => {
       const parsedData = JSON.parse(event.data)
       console.log({ parsedData, donations, newDonation })

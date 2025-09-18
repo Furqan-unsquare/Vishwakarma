@@ -1,4 +1,4 @@
-export const API_BASE_URL = 'http://localhost:3000'
+export const API_BASE_URL = 'https://vishwakarma.onrender.com'
 export const ERROR_TOAST_STYLE = {
   backgroundColor: 'oklch(70.4% 0.191 22.216)',
   color: 'white',

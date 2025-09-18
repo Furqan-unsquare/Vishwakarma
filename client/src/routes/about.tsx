@@ -45,7 +45,7 @@ function RouteComponent() {
       <div className=" py-38 px-4 pb-8 md:px-32 text-center md:text-left">
         <h1 className="font-Poppins font-semibold text-3xl md:text-5xl tracking-tight leading-tight md:leading-[1.2] mb-4">
           Together We Build, Grow, Support and Celebrate
-          <span className="text-Orange">Vishwakarma Samaja</span>
+          <span className="text-Orange"> Vishwakarma Samaja</span>
         </h1>
         <p className="text-gray-600 text-base md:text-lg leading-relaxed max-w-2xl mx-auto md:mx-0">
           Shree Vishwakarma Panchal Samaj Association, Thane, is a community

@@ -8,7 +8,7 @@ export const auth = betterAuth({
     provider: "pg",
     schema,
   }),
-  trustedOrigins: ["http://localhost:3000", "http://localhost:5174"],
+  trustedOrigins: ["https://vishwakarma.onrender.com", "http://localhost:5174"],
   emailAndPassword: {
     enabled: true,
   },
